@@ -42,10 +42,9 @@ function openLetter(letterType) {
     } else if (letterType === 'U Just Want To Smile') {
         titleElement.textContent = "My Favorite View 🥺";
         
-        // Add a photo here if you want one!
-        // imageElement.src = "your-smile-photo.jpg"; 
-        // imageElement.style.display = "block";
-        
+        //Add a photo here if you want one!
+        imageElement.src = "11.jpg"; 
+        imageElement.style.display = "block";
         textElement.innerHTML = "Hey love,<br><br>Did you know that your smile is my absolute favorite thing in the whole world? Just picturing it right now is making me smile. Keep shining, gorgeous.";
     
     } else if (letterType === 'You Need A Virtual Hug') {
