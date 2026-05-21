@@ -25,10 +25,10 @@ function openLetter(letterType) {
         titleElement.textContent = "When the world misses you";
         textElement.innerHTML = "My darling,<br><br>If you're reading this, I hope your heart feels a tiny pull. I miss you, too. Probably more than words can say. Distance is just a small hurdle in our grand love story. Close your eyes and feel my hug. It's always waiting for you.";
     } else if (letterType === 'we-fight') {
-        titleElement.textContent = "When hearts are bruised";
-        textElement.innerHTML = "Hey love,<br><br>Take a breath. No matter what we argued about, it’s not as strong as my love for you. It's us against the problem, not us against each other. I'd rather be wrong and holding you, than right and alone. I love you, let's fix it.";
+        titleElement.textContent = "My Favorite View 👀";
+        textElement.innerHTML = "Hey love,<br><br>Did you know that your smile is my absolute favorite thing in the whole world? Just picturing it right now is making me smile.You bring so much light and joy into my life effortlessly. I hope this tiny message brings a little bit of that light back to your beautiful face today. Keep shining, gorgeous.";
     } else if (letterType === 'youre-sad') {
-        titleElement.textContent = "When you need a light";
+        titleElement.textContent = "Sending You Our Special Hug 🤗";
         textElement.innerHTML = "Hi baby,<br><br>If a shadow is hanging over you, let my love be your sun. You are stronger, softer, and more beautiful than you see. Every storm passes, but what we have is eternal. Don't carry this alone; I'm always cheering you on, right beside you.";
     }
 }
