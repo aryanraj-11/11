@@ -51,7 +51,7 @@ function openLetter(letterType) {
         titleElement.textContent = "Sending You Our Special Hug 🤗";
         
         // Add the hugging photo here
-        imageElement.src = "1000319105.jpg"; 
+        imageElement.src = "3.jpeg"; 
         imageElement.style.display = "block";
         
         textElement.innerHTML = "Hi baby,<br><br>I wish I could be there right now to pull you close, just like that very first time I held you tight and spun you around. Remember that moment? The whole world just blurred out, and it was only you in my arms.<br><br>Close your eyes and feel this hug. I'm right here.";
