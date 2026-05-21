@@ -27,7 +27,7 @@ function openLetter(letterType) {
     } else if (letterType === 'U Just Want To Smile') {
         titleElement.textContent = "My Favorite View 👀";
         textElement.innerHTML = "Hey love,<br><br>Did you know that your smile is my absolute favorite thing in the whole world? Just picturing it right now is making me smile.You bring so much light and joy into my life effortlessly. I hope this tiny message brings a little bit of that light back to your beautiful face today. Keep shining, gorgeous.";
-    } else if (letterType === 'youre-sad') {
+    } else if (letterType === 'You Need A Virtual Hug') {
         titleElement.textContent = "Sending You Our Special Hug 🤗";
         textElement.innerHTML = "Hi baby,<br><br>If a shadow is hanging over you, let my love be your sun. You are stronger, softer, and more beautiful than you see. Every storm passes, but what we have is eternal. Don't carry this alone; I'm always cheering you on, right beside you.";
     }
