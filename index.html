@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Love... for My Everything</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Poppins:wght@300;400;600&family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="flower-icon"></div>
+
+        <div id="welcome-page" class="page active-page">
+            <h1 class="aesthetic-heading">I have a little secret...</h1>
+            <button class="primary-btn pulse-btn" onclick="showPage('surprise-confirm-page')">Tell me!</button>
+        </div>
+
+        <div id="surprise-confirm-page" class="page">
+            <h2 class="aesthetic-heading">Will you give me your heart?</h2>
+            <div class="button-group">
+                <button class="primary-btn yes-btn" onclick="showPage('ready-confirm-page')">Yes, Always</button>
+                <button id="no-button" class="secondary-btn no-btn">No, not yet</button>
+            </div>
+        </div>
+
+        <div id="ready-confirm-page" class="page">
+            <h2 class="aesthetic-heading">Are you ready for the magic?</h2>
+            <button class="primary-btn" onclick="showPage('envelopes-page')">Yes, Take Me There!!</button>
+        </div>
+
+        <div id="envelopes-page" class="page">
+            <h1 class="aesthetic-heading romantic">Open When...</h1>
+            <div class="envelope-grid">
+                <div class="envelope-card" onclick="openLetter('miss-me')">You miss me</div>
+                <div class="envelope-card" onclick="openLetter('we-fight')">We fight</div>
+                <div class="envelope-card" onclick="openLetter('youre-sad')">You're sad</div>
+                </div>
+        </div>
+
+        <div id="letter-page" class="page">
+            <div class="letter-content">
+                <h2 id="letter-title" class="letter-heading cursive-text"></h2>
+                
+                <div class="polaroid-wrapper">
+                    <img src="couple_photo.jpg" alt="A magical moment" class="polaroid-img">
+                    <p class="polaroid-caption cursive-text">Always and forever</p>
+                </div>
+                
+                <p id="letter-text" class="letter-body cursive-text"></p>
+                
+                <button class="secondary-btn back-btn" onclick="showPage('envelopes-page')">Back to My Letters</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
