@@ -33,7 +33,7 @@ function openLetter(letterType) {
         titleElement.textContent = "When u Takes The Initiative";
         
         // 2. Add the photo for this specific envelope
-        imageElement.src = "1000319138.jpg"; 
+        imageElement.src = "12.jpg"; 
         imageElement.style.display = "block";
         
         // 3. Your notes are still right here!
