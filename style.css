@@ -1,0 +1,243 @@
+/* --- Global & Variable Styling --- */
+:root {
+    --bg-color: #fdf5f5; /* Very soft pastel pink/cream */
+    --main-accent: #fcd5e0; /* Softer, muted pink for boxes */
+    --btn-color: #f7a1b9; /* More attractive pink for buttons */
+    --text-primary: #a35d70; /* Muted rosy text */
+    --text-heading: #7a3e50; /* Darker rosy for headings */
+    --transition-speed: 0.5s;
+    
+    /* Elegant Font Stacks */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Poppins', sans-serif;
+    --cursive-font: 'Homemade Apple', cursive;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    background-image: url('bg.png'); /* Replace with cute soft pattern bg */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text-primary);
+    overflow: hidden; /* Important for Moving No button logic */
+}
+
+/* --- Container (Glitzed Up) --- */
+.main-wrapper {
+    background-color: rgba(255, 255, 255, 0.95); 
+    padding: 60px 40px;
+    border-radius: 30px; /* Modern rounded corners */
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft aesthetic shadow */
+    position: relative;
+    max-width: 700px;
+    width: 90%;
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+
+/* Elegant Flower Decor */
+.flower-icon {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 100px;
+    height: 100px;
+    background-image: url('flower_decor.png'); /* Pastel watercolor wreath suggested */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Typography Overhaul */
+.aesthetic-heading {
+    font-family: var(--heading-font);
+    color: var(--text-heading);
+    font-size: 2.8em;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.romantic {
+    color: #f77093; /* Brighter pink for love emphasis */
+}
+
+/* Buttons (Polished) */
+.primary-btn {
+    font-family: var(--heading-font);
+    background-color: var(--btn-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.3em;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn:hover {
+    background-color: #f17a9c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-btn {
+    font-family: var(--heading-font);
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+    padding: 10px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+.secondary-btn:hover {
+    background-color: var(--text-primary);
+    color: white;
+}
+
+/* Pulse animation for welcome button */
+.pulse-btn {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(247, 161, 185, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(247, 161, 185, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(247, 161, 185, 0);
+    }
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* --- Page Transitions (Smooth Fate-In) --- */
+.page {
+    display: none; 
+}
+
+.active-page {
+    display: block; 
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Envelope Selection (Refined Cards) --- */
+.envelope-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.envelope-card {
+    border: 2px solid var(--text-primary);
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background-color: var(--main-accent);
+    font-family: var(--cursive-font);
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.envelope-card:hover {
+    transform: scale(1.08) rotate(3deg);
+    border-color: #f77093;
+    color: #f77093;
+    box-shadow: 0 8px 25px rgba(247, 161, 185, 0.3);
+}
+
+/* --- The Letter Content (Cursive & Photo) --- */
+.letter-content {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cursive-text {
+    font-family: var(--cursive-font);
+    line-height: 1.8;
+    color: var(--text-heading);
+}
+
+.letter-heading {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.letter-body {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+/* Polaroid Photo Styling */
+.polaroid-wrapper {
+    background-color: #fff;
+    padding: 15px 15px 30px 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: rotate(-3deg);
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.polaroid-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.polaroid-caption {
+    font-size: 1.1em;
+    margin: 15px 0 0 0;
+    color: #a0a0a0;
+}
+
+.back-btn {
+    display: block;
+    margin: 0 auto;
+}
