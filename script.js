@@ -15,23 +15,50 @@ function showPage(pageId) {
 
 // --- Letter Content (Updated Messages) ---
 function openLetter(letterType) {
-    showPage('letter-page'); 
+    showPage('letter-page');
 
     const titleElement = document.getElementById('letter-title');
     const textElement = document.getElementById('letter-text');
+    
+    // 1. Add this new line to grab the image element from your HTML
+    const imageElement = document.getElementById('letter-image');
+
+    // Hide the image by default (so envelopes without photos don't show a broken icon)
+    if (imageElement) {
+        imageElement.style.display = 'none';
+    }
 
     // Sweet, cursive-friendly updates
     if (letterType === 'Your Initiative, My Happiness') {
         titleElement.textContent = "When u Takes The Initiative";
-        textElement.innerHTML = "My darling,<br><br>Looking at this, I can still hear you telling me to come sit close to you. It’s my favorite thing , how you always make space for me in your world. That moment on the hill was perfect, not just because of the view, but because you wanted to share it so closely with me.";
+        
+        // 2. Add the photo for this specific envelope
+        imageElement.src = "1000319138.jpg"; 
+        imageElement.style.display = "block";
+        
+        // 3. Your notes are still right here!
+        textElement.innerHTML = "My darling,<br><br>Looking at this, I can still hear you telling me to come sit close to you. It's my favorite thing, how you always make space for me in your world. That moment on the hill was perfect, not just because of the view, but because you wanted to share it so closely with me.";
+    
     } else if (letterType === 'U Just Want To Smile') {
-        titleElement.textContent = "My Favorite View 👀";
-        textElement.innerHTML = "Hey love,<br><br>Did you know that your smile is my absolute favorite thing in the whole world? Just picturing it right now is making me smile.You bring so much light and joy into my life effortlessly. I hope this tiny message brings a little bit of that light back to your beautiful face today. Keep shining, gorgeous.";
+        titleElement.textContent = "My Favorite View 🥺";
+        
+        // Add a photo here if you want one!
+        // imageElement.src = "your-smile-photo.jpg"; 
+        // imageElement.style.display = "block";
+        
+        textElement.innerHTML = "Hey love,<br><br>Did you know that your smile is my absolute favorite thing in the whole world? Just picturing it right now is making me smile. Keep shining, gorgeous.";
+    
     } else if (letterType === 'You Need A Virtual Hug') {
         titleElement.textContent = "Sending You Our Special Hug 🤗";
-        textElement.innerHTML = "Hi baby,<br><br>If a shadow is hanging over you, let my love be your sun. You are stronger, softer, and more beautiful than you see. Every storm passes, but what we have is eternal. Don't carry this alone; I'm always cheering you on, right beside you.";
+        
+        // Add the hugging photo here
+        imageElement.src = "1000319105.jpg"; 
+        imageElement.style.display = "block";
+        
+        textElement.innerHTML = "Hi baby,<br><br>I wish I could be there right now to pull you close, just like that very first time I held you tight and spun you around. Remember that moment? The whole world just blurred out, and it was only you in my arms.<br><br>Close your eyes and feel this hug. I'm right here.";
     }
 }
+    
 
 // --- Polish tricky "No" Button Interaction ---
 document.addEventListener("DOMContentLoaded", () => {
