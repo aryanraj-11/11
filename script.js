@@ -21,9 +21,9 @@ function openLetter(letterType) {
     const textElement = document.getElementById('letter-text');
 
     // Sweet, cursive-friendly updates
-    if (letterType === 'miss-me') {
-        titleElement.textContent = "When the world misses you";
-        textElement.innerHTML = "My darling,<br><br>If you're reading this, I hope your heart feels a tiny pull. I miss you, too. Probably more than words can say. Distance is just a small hurdle in our grand love story. Close your eyes and feel my hug. It's always waiting for you.";
+    if (letterType === 'Your Initiative, My Happiness') {
+        titleElement.textContent = "When u Takes The Initiative";
+        textElement.innerHTML = "My darling,<br><br>Looking at this, I can still hear you telling me to come sit close to you. It’s my favorite thing , how you always make space for me in your world. That moment on the hill was perfect, not just because of the view, but because you wanted to share it so closely with me.";
     } else if (letterType === 'we-fight') {
         titleElement.textContent = "My Favorite View 👀";
         textElement.innerHTML = "Hey love,<br><br>Did you know that your smile is my absolute favorite thing in the whole world? Just picturing it right now is making me smile.You bring so much light and joy into my life effortlessly. I hope this tiny message brings a little bit of that light back to your beautiful face today. Keep shining, gorgeous.";
