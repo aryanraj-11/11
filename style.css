@@ -195,11 +195,17 @@ body {
 }
 
 .cursive-text {
-    font-family: var(--cursive-font);
-    line-height: 1.8;
-    color: var(--text-heading);
+    /* Font family change kar rahe hain */
+    font-family: 'Caveat', cursive; 
+    
+    /* Font thoda bada karne se readability aur badh jayegi */
+    font-size: 1.5rem; 
+    
+    /* Do lines ke beech mein thoda space taaki saaf padhne me aaye */
+    line-height: 1.4; 
+    
+    color: #4a4a4a; /* Ya jo bhi color aap pehle use kar rahe the */
 }
-
 .letter-heading {
     font-size: 2.2em;
     margin-bottom: 30px;
