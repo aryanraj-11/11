@@ -219,31 +219,28 @@ body {
 
 /* Polaroid Photo Styling */
 .polaroid-wrapper {
-    background-color: #fff;
-    padding: 15px 15px 30px 15px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transform: rotate(-3deg);
-    display: block;
-    max-width: 200px;
-    margin: 0 auto 30px auto;
+    background: #ffffff;
+    padding: 10px 10px 25px 10px; /* White border banata hai */
+    width: 260px; /* Ek fixed size jo sab photos pe perfect lagega */
+    margin: 0 auto 20px auto; /* Isko center mein rakhega */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Pyaari si shadow */
+    box-sizing: border-box;
     text-align: center;
 }
 
 .polaroid-img {
-    max-height: 250px; /* Photo ko zyada lamba hone se rokega */
-    width: auto;       /* Photo ka aspect ratio (shape) maintain karega */
+    width: 100%; /* Wrapper ke andar poori jagah lega */
+    height: 240px; /* Photo ki height fix karega */
+    object-fit: cover; /* BINA STRETCH kiye photo ko frame me fit karega */
     display: block;
-    margin: 0 auto;    /* Photo ko center me rakhega */
-    /* Baaki jo pehle ka code tha (jaise border, shadow) usko waise hi rehne dijiye */
+    border-radius: 3px; /* Halke se gol edges */
 }
 
 .polaroid-caption {
-    font-size: 1.1em;
-    margin: 15px 0 0 0;
-    color: #a0a0a0;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #4a4a4a;
 }
-
 .back-btn {
     display: block;
     margin: 0 auto;
