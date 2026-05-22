@@ -251,3 +251,66 @@ body {
     display: block;
     margin: 0 auto;
 }
+/* --- WELCOME PAGE AESTHETIC UPDATES --- */
+
+/* 1. Poore page ke background ko soft gradient dete hain (jaise soft sky) */
+#welcome-page {
+    background: linear-gradient(135deg, #fffcf9 0%, #ffe4e6 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 2. Welcome Card Wrapper: Isse text aur photo ek hi 'polaroid' frame me lagenge */
+.welcome-card-wrapper {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px; /* Soft edges */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Bohot halki shadow depth dene ke liye */
+    text-align: center;
+    width: 90%;
+    max-width: 350px; /* Card ki width limit kar di aesthetic look ke liye */
+    transition: transform 0.3s ease;
+}
+
+/* 3. Cute Bear GIF styling */
+#welcome-cute-photo {
+    width: 100%; /* Card ke andar poora fit ho jaye */
+    height: auto;
+    max-height: 200px; /* Zyada lamba na ho */
+    object-fit: contain; /* Photo stretch na ho */
+    border-radius: 12px;
+    margin-bottom: 25px; /* Text se thoda space */
+    border: 3px solid #fff3f5; /* Halke border polaroid look ke liye */
+}
+
+/* 4. "I have a little secret" text customization */
+.aesthetic-heading {
+    /* Humne pehle fonts add kiye the, unme se 'Caveat' use karte hain heading ke liye */
+    font-family: 'Caveat', cursive; 
+    font-size: 2.2rem;
+    color: #a35368; /* Soft dusty pinkish color, black nahi */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.05); /* Halka aesthetic effect */
+}
+
+/* 5. "Tell me!" Button customize - matches with butterfly style */
+#welcome-page .primary-btn {
+    background-color: #d18a99; /* soft rose-gold pink */
+    color: white;
+    border: none;
+    border-radius: 30px; /* Bohot gol button */
+    padding: 12px 25px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(209, 138, 153, 0.3);
+    transition: all 0.3s ease;
+}
+
+#welcome-page .primary-btn:hover {
+    transform: translateY(-3px); /* Halka upar uthega hover karne par */
+    box-shadow: 0 6px 15px rgba(209, 138, 153, 0.5);
+}
