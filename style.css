@@ -211,6 +211,11 @@ body {
     margin-bottom: 40px;
     padding: 0 10px;
 }
+#letter-page {
+    overflow-y: auto;      /* Yeh page ko scrollable banayega */
+    max-height: 100vh;     /* Page ko screen ki limit me rakhega */
+    padding-bottom: 50px;  /* Niche button ke baad thodi jagah dega */
+}
 
 /* Polaroid Photo Styling */
 .polaroid-wrapper {
@@ -226,9 +231,11 @@ body {
 }
 
 .polaroid-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+    max-height: 250px; /* Photo ko zyada lamba hone se rokega */
+    width: auto;       /* Photo ka aspect ratio (shape) maintain karega */
+    display: block;
+    margin: 0 auto;    /* Photo ko center me rakhega */
+    /* Baaki jo pehle ka code tha (jaise border, shadow) usko waise hi rehne dijiye */
 }
 
 .polaroid-caption {
